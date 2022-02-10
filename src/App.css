@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.main-body {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 5rem;
+  color: rgb(102, 102, 102);
+}
+
+.spanner {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 6rem;
+  padding-left: 3rem;
+  width: 75vh;
+}
+
+.spanner:hover span.theproblem {
+  font-size: 0;
+  transition: 0.3s;
+}
+
+.spanner span.solveit {
+  font-size: 0;
+  transition: 0.3s;
+}
+
+.spanner:hover span.solveit {
+  font-size: 5rem;
+  transition: 0.3s;
+}
+
+.solveit:hover {
+  display: none;
+}
+
+.solveit:hover button.solveit {
+  display: inline;
+}
+
+.spanner span.ucover {
+  transition: 2.4s;
+}
+
+.spanner:hover span.uncover {
   color: white;
+  padding: 0.6rem; 
+  transition: 0.6s;
+}
+
+.spanner span.hidden {
+  size: 0 !important;
+  display: none;
+  transition: 0.6s;
+}
+.spanner:hover span.hidden {
+  font-size: 5rem;
+  display: inline;
+  transition: 0.6s;
+  padding-right: 0;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
