@@ -1,0 +1,10 @@
+div#main.welcome {
+  background-color: hsl(187, 100%, 79%);  
+  height: 100vh;
+  color: rgb(31, 61, 47);
+}
+
+div.introduction {
+  font-size: 3rem;
+  font-weight: bold;
+}

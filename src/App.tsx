@@ -1,13 +1,13 @@
-import './App.css';
+import Possible from "./components/Possible"
+import Welcome from './components/Welcome';
+
+import './styles/possible.css'
 
 function App() {
   return (
-    <div className="App main-body">
-      <div className="spanner">
-        <span className="theproblem">THIS PROBLEM IS</span><br />
-        <span className="uncover">I</span><span className="uncover"><span className="hidden">A</span>M</span><span className="uncover">POSSIBLE</span><br />
-        <span className="solveit">SOLVE IT!!</span>
-      </div>
+    <div>
+      <Welcome />
+      {false ? <Possible /> : null}
     </div>
   );
 }
